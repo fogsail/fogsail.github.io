@@ -1,0 +1,333 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>算法小站 - 算法学习和技术学习</title><meta name="author" content="fogsail,fogsail_chen@163.com"><meta name="copyright" content="fogsail"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="ICPC等算法竞赛中的算法学习，项目开发中的思考，技术书籍的阅读">
+<meta property="og:type" content="website">
+<meta property="og:title" content="算法小站">
+<meta property="og:url" content="http://example.com/page/4/index.html">
+<meta property="og:site_name" content="算法小站">
+<meta property="og:description" content="ICPC等算法竞赛中的算法学习，项目开发中的思考，技术书籍的阅读">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/avatar.jpg">
+<meta property="article:author" content="fogsail">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/avatar.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/page/4/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//s4.cnzz.com"/><link rel="preconnect" href="//www.clarity.ms"/><link rel="preconnect" href="//zz.bdstatic.com"/><meta name="google-site-verification" content="EMoSEE-nLoAdIHWBDmdYpa0t4XBCF8aLYOM3ayoI0pI"/><meta name="msvalidate.01" content="A5D49B867EF1BB3C062DA0149A0A2E1E"/><meta name="baidu-site-verification" content="code-CpEJB8eTmb"/><link rel="manifest" href="/img/pwa/manifest.json"/><meta name="msapplication-TileColor" content="#fff"/><link rel="apple-touch-icon" sizes="180x180" href="/img/pwa/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/img/pwa/32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/img/pwa/16.png"/><link rel="mask-icon" href="/img/pwa/safari-pinned-tab.svg" color="#5bbad5"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?eefa70020af0829b6b4b9a6151d8a943";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-114571328-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-114571328-1');
+</script><script async="async" data-pjax="data-pjax" src="https://s4.cnzz.com/z_stat.php?id=1279649349&amp;web_id=1279649349"></script><script>(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "54ot8ypshu");</script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":100,"languages":{"author":"作者: fogsail","link":"链接: ","source":"来源: 算法小站","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}
+
+// https://stackoverflow.com/questions/16839698/jquery-getscript-alternative-in-native-javascript
+const getScript = url => new Promise((resolve, reject) => {
+  const script = document.createElement('script')
+  script.src = url
+  script.async = true
+  script.onerror = reject
+  script.onload = script.onreadystatechange = function() {
+    const loadState = this.readyState
+    if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+    script.onload = script.onreadystatechange = null
+    resolve()
+  }
+  document.head.appendChild(script)
+})</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2021-01-26 18:55:34'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+   if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+  const autoChangeMode = 'false'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }const asideStatus = saveToLocal.get('aside-status')
+if (asideStatus !== undefined) {
+   if (asideStatus === 'hide') {
+     document.documentElement.classList.add('hide-aside')
+   } else {
+     document.documentElement.classList.remove('hide-aside')
+   }
+}})()</script><style type="text/css">.app-refresh{position:fixed;top:-2.2rem;left:0;right:0;z-index:99999;padding:0 1rem;font-size:15px;height:2.2rem;transition:all .3s ease}.app-refresh-wrap{display:flex;color:#fff;height:100%;align-items:center;justify-content:center}.app-refresh-wrap a{color:#fff;text-decoration:underline;cursor:pointer}</style><meta name="generator" content="Hexo 5.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">105</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">32</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">12</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 所有文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-list"></i><span> 娱乐</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/games/"><i class="fa-fw fas fa-gamepad"></i><span> 游戏</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page" href="/books/"><i class="fa-fw fas fa-book"></i><span> 读书</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(/img/home-bg.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">算法小站</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 所有文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-list"></i><span> 娱乐</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/games/"><i class="fa-fw fas fa-gamepad"></i><span> 游戏</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page" href="/books/"><i class="fa-fw fas fa-book"></i><span> 读书</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">算法小站</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://www.acwing.com/user/myspace/index/8330/" rel="external nofollow noreferrer" target="_blank" title="Acwing"><i class="fab fa-codepen"></i></a><a class="social-icon" href="https://github.com/fogsail" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:fogsail_chen@163.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://steamcommunity.com/id/877413712/" rel="external nofollow noreferrer" target="_blank" title="Steam"><i class="fab fa-steam"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/05/14/20200513/" title="图算法和图模型(二)">     <img class="post_bg" src="/img/algo-01.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="图算法和图模型(二)"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/05/14/20200513/" title="图算法和图模型(二)">图算法和图模型(二)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-05-14T06:32:42.000Z" title="发表于 2020-05-14 14:32:42">2020-05-14</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/algorithm/">algorithm</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/algorithm/">algorithm</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/Graph/">Graph</a></span></div><div class="content">这部分我重点写了最短路问题
+
+ 最短路
+ Dijkstra
+
+POJ1511
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990const int inf = 0x3f3f3f3f;const int maxn = 1e6 + 5;// == Graph definition ==vector&lt;int&gt; G[maxn];class Edge &#123;public:    int to, weight;    Edge() &#123;&#125;    Edge(int to, int w) : to(to), weight(w) &#123;&#125;&#125;;vector&lt;Edge&gt; edges;void initG() &#123;    _for(i, 0, ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/05/02/20200422/" title="分析学基本理论（二）">     <img class="post_bg" src="/img/algo-01.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="分析学基本理论（二）"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/05/02/20200422/" title="分析学基本理论（二）">分析学基本理论（二）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-05-02T11:59:20.000Z" title="发表于 2020-05-02 19:59:20">2020-05-02</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/math/">math</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/math/">math</a></span></div><div class="content">这篇博文对连分数理论和逼近算法做进一步研究
+
+ 连分数逼近算法
+ 连分数与渐进分数的差
+x=an+1′pn+pn−1an+1′qn+qn−1 x−pnqn=(−1)nqn(an+1′qn+qn−1)x−p0q0=x−a0=1a1′ 根据前面的引理，q1′=a1′,qn′=an′qn−1+qn−2 (1&lt;n⩽N) specialaN=aN′qN′=qNx=\frac{a_{n+1}^{\prime} p_{n}+p_{n-1}}{a_{n+1}^{\prime} q_{n}+q_{n-1}} \\ \ \\
+x-\frac{p_{n}}{q_{n}}=\frac{(-1)^{n}}{q_ n\left(a_{n+1}^{\prime} q_{n}+q_{n-1}\right)} \quad x-\frac{p_{0}}{q_{0}}=x-a_{0}=\frac{1}{a_{1}^{\prime}} \\ \ \\
+\text{根据前面的引理，} q_{1}^{\prime}=a_{1}^{\prime}, \quad q_{n}^{\prime}=a_{n}^{\prime} q_ ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/04/28/20200421/" title="基础代数（一）代数的起源">     <img class="post_bg" src="/img/algo-01.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基础代数（一）代数的起源"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/04/28/20200421/" title="基础代数（一）代数的起源">基础代数（一）代数的起源</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-04-28T12:25:06.000Z" title="发表于 2020-04-28 20:25:06">2020-04-28</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/math/">math</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/math/">math</a></span></div><div class="content">科斯特利金的代数学书写的挺不错的
+有一些现代的问题也值得研究
+
+ 数学归纳法原理
+从美国数学月刊的一个征解问题说起
+美国数学月刊，1977，V.84, No.61977，\text{V.84, No.6}1977，V.84, No.6
+给定圆周上任意 nnn 个点，确定 (n2)n \choose 2(2n​)条弦
+划分圆内的区域数 RnR_nRn​，任意三条弦在圆内不相交
+Rn=1+(n2)+(n4)R_n = 1+\left(\begin{array}{l}
+n \\
+2
+\end{array}\right)+\left(\begin{array}{l}
+n \\
+4
+\end{array}\right)Rn​=1+(n2​)+(n4​)
+根据数学归纳法，n=1n = 1n=1 显然成立，如果 n=kn = kn=k 时成立，那么只要证明
+Rn+1−Rn=n+(n3)R_{n+1}-R_{n}=n+\left(\begin{array}{l}
+n \\
+3
+\end{array}\right)
+Rn+1​−Rn​=n+(n3​)
+而这个式子是成立的，证明如下
+i) \textbf{ ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/04/23/20200420/" title="分析学基本理论（一）">     <img class="post_bg" src="/img/algo-02.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="分析学基本理论（一）"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/04/23/20200420/" title="分析学基本理论（一）">分析学基本理论（一）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-04-23T06:31:25.000Z" title="发表于 2020-04-23 14:31:25">2020-04-23</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/math/">math</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/math/">math</a></span></div><div class="content">这里对分析学基础理论，极限和无穷级数部分做一个 review\textbf{review}review
+在 knuth\text{knuth}knuth 的具体数学中，很多理论都是建立在分析学基础上的
+
+ 数列极限的补充问题
+从每一个实数列中都可以选出一个收敛的或者是趋于无穷的子列
+proof\textbf{proof}\quadproof 其中，收敛很好证明
+
+无穷性的证明，∀k∈N,choose nk∈N\forall k \in \mathbb{N}, \text{choose} \ n_k \in \mathbb{N}∀k∈N,choose nk​∈N
+∣xnk∣&gt;k and nk&lt;nk+1,xnk|x_{n_k}| &gt; k \ \textbf{and} \ n_k &lt; n_{k+1}, {x_{n_k}}∣xnk​​∣&gt;k and nk​&lt;nk+1​,xnk​​ 构成无穷子列
+example1\textbf{example1}example1
+lim⁡‾k→∞(−1)kk=lim⁡n→∞inf⁡k⩾n(−1)kk={(−1)2m+1(2m+ ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/04/20/20200419/" title="一些通用的数学概念和记号">     <img class="post_bg" src="/img/algo-03.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="一些通用的数学概念和记号"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/04/20/20200419/" title="一些通用的数学概念和记号">一些通用的数学概念和记号</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-04-20T03:22:27.000Z" title="发表于 2020-04-20 11:22:27">2020-04-20</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/math/">math</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/math/">math</a></span></div><div class="content">最近想着有空的时候把数学捡起来
+这篇博文写了分析学中的集合论
+先从分析学开始吧
+
+ 集合论一些结论的证明
+solution1\textbf{solution1}solution1
+X×Y=∅  ⟺  (X=∅)∨(Y=∅)
+X \times Y =  \emptyset \iff (X=\emptyset) \vee (Y =\emptyset)
+X×Y=∅⟺(X=∅)∨(Y=∅)
+proof\textbf{proof}proof
+∅=(x∈X)∧(x∈CMX){(x∈X)∧(y∈Y)=(x∈X)∧(x∈CMX)(x∈X)∧(y∈Y)=(y∈Y)∧(y∈CMY)\emptyset = (x \in X) \wedge (x \in C_MX)
+\\
+\begin{cases} 
+(x \in X) \wedge (y \in Y) = (x \in X) \wedge (x \in C_MX) &amp;  \\
+(x \in X) \wedge (y \in Y) = (y \in Y) \wedge (y \in C_MY)  &amp;  
+\end{cases}
+∅=(x∈X) ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/04/11/20200411/" title="高级数据结构（二）">     <img class="post_bg" src="/img/algo-01.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="高级数据结构（二）"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/04/11/20200411/" title="高级数据结构（二）">高级数据结构（二）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-04-11T10:32:26.000Z" title="发表于 2020-04-11 18:32:26">2020-04-11</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/algorithm/">algorithm</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/algorithm/">algorithm</a></span></div><div class="content">这部分重点介绍一下KDTree，CDQ分治等等
+
+ KDTree介绍
+
+
+
+
+
+
+
+
+
+
+
+
+KDTree模版
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122const int maxn = 1e6 + 5;const int NIL = -1;// == Point definition ==class Point &#123;public:    int id, x, y;    Point() &#123;&#125;    Point(int _id, int _x, int _y) : id(_id), x(_x) ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/03/27/20200327/" title="高级数据结构（一）">     <img class="post_bg" src="/img/algo-01.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="高级数据结构（一）"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/03/27/20200327/" title="高级数据结构（一）">高级数据结构（一）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-03-27T11:19:44.000Z" title="发表于 2020-03-27 19:19:44">2020-03-27</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/algorithm/">algorithm</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/algorithm/">algorithm</a></span></div><div class="content">这里给出一些字符串算法的实现，和一些高级数据结构
+主要有后缀数组，trie树，splay树等等
+
+ 后缀数组
+
+
+123456789101112131415161718192021222324252627282930313233343536373839404142434445class suffixArray &#123;public:    int str[maxn], sa[maxn];    int c[maxn], t1[maxn], t2[maxn];    int n;    void build(int R) &#123;        *x = t1, *y = t2;        // radix sort according to 1stKey        _for(i, 0, R) c[i] = 0;        _for(i, 0, n) c[x[i] = str[i]]++;        _for(i, 1, R) c[i] += c[i - 1];        _forDown(i, n - 1, 0) sa[--c[x[i]]] = i;     ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/03/05/20200305/" title="实用数据结构(六)">     <img class="post_bg" src="/img/algo-01.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="实用数据结构(六)"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/03/05/20200305/" title="实用数据结构(六)">实用数据结构(六)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-03-04T17:34:50.000Z" title="发表于 2020-03-05 01:34:50">2020-03-05</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/algorithm/">algorithm</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/algorithm/">algorithm</a></span></div><div class="content">这部分给出一些数据结构的模版，和处理技巧
+
+ 线段树
+ 单点修改模版
+UVA12299
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109const int inf = 0x3f3f3f3f;const int maxnode = 1&lt;&lt;18;const int maxn = 100000 + 10;int A[maxn];int n, q;// == struct segment tree ==class segTree &#123;public:    int l, r;    int dat;&#125;;segTree tree[maxnode];#define l(x) tree[x ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/02/12/20200212/" title="动态规划综合(一)">     <img class="post_bg" src="/img/algo-02.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="动态规划综合(一)"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/02/12/20200212/" title="动态规划综合(一)">动态规划综合(一)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-02-12T00:25:22.000Z" title="发表于 2020-02-12 08:25:22">2020-02-12</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/algorithm/">algorithm</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/algorithm/">algorithm</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/dp/">dp</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/%E5%A4%A7%E6%95%B4%E6%95%B0/">大整数</a></span></div><div class="content">这部分内容主要讲述动态规划的综合
+包括大整数与计数问题，计数dp，数位统计dp
+ 计数dp补充
+ 大整数类与计数dp
+这里特别注意大整数类的封装
+
+POJ1737
+
+basebasebase 取 1e41e41e4，很常见
+1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889909192939495969798991001011021031041051061071081091101111121131141151161171181191201211221231241251261271281291301311321331341351361371381391401411421431441451461471481491501511521531541551561571581591601611621631641651 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/02/03/20200203/" title="动态规划优化(三)">     <img class="post_bg" src="/img/algo-02.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="动态规划优化(三)"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/02/03/20200203/" title="动态规划优化(三)">动态规划优化(三)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-02-03T12:01:32.000Z" title="发表于 2020-02-03 20:01:32">2020-02-03</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/algorithm/">algorithm</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/algorithm/">algorithm</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/dp/">dp</a></span></div><div class="content">这部分内容主要介绍了四边形不等式和数位dp
+
+ 四边形不等式
+ 一维线性dp的四边形不等式优化
+Acwing304
+
+
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114const int maxn = 100000 + 5;int N, L, P;class Q &#123;public:    int x, l, r;&#125;;Q q[maxn];ld f[maxn];ll S[maxn];void init() &#123;    Set(f, 0);    Set(S, 0);&#125;ld cal(int i, int j) &#123;    ld ans  ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/3/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/5/"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">fogsail</div><div class="author-info__description">ICPC等算法竞赛中的算法学习，项目开发中的思考，技术书籍的阅读</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">105</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">32</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">12</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/fogsail"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://www.acwing.com/user/myspace/index/8330/" rel="external nofollow noreferrer" target="_blank" title="Acwing"><i class="fab fa-codepen"></i></a><a class="social-icon" href="https://github.com/fogsail" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:fogsail_chen@163.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://steamcommunity.com/id/877413712/" rel="external nofollow noreferrer" target="_blank" title="Steam"><i class="fab fa-steam"></i></a></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/01/25/20210121/" title="hexo网站使用Git和nginx部署到ubuntu服务器"><img src="/img/algo-03.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="hexo网站使用Git和nginx部署到ubuntu服务器"/></a><div class="content"><a class="title" href="/2021/01/25/20210121/" title="hexo网站使用Git和nginx部署到ubuntu服务器">hexo网站使用Git和nginx部署到ubuntu服务器</a><time datetime="2021-01-25T00:02:14.000Z" title="发表于 2021-01-25 08:02:14">2021-01-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/22/20210120/" title="openssl和openssh升级版本到最新"><img src="/img/algo-03.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="openssl和openssh升级版本到最新"/></a><div class="content"><a class="title" href="/2021/01/22/20210120/" title="openssl和openssh升级版本到最新">openssl和openssh升级版本到最新</a><time datetime="2021-01-21T19:43:01.000Z" title="发表于 2021-01-22 03:43:01">2021-01-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/11/11/20201001/" title="算法设计策略杂谈（二）"><img src="/img/algo-01.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="算法设计策略杂谈（二）"/></a><div class="content"><a class="title" href="/2020/11/11/20201001/" title="算法设计策略杂谈（二）">算法设计策略杂谈（二）</a><time datetime="2020-11-10T16:02:52.000Z" title="发表于 2020-11-11 00:02:52">2020-11-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/11/04/20200920/" title="算法设计策略杂谈"><img src="/img/algo-02.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="算法设计策略杂谈"/></a><div class="content"><a class="title" href="/2020/11/04/20200920/" title="算法设计策略杂谈">算法设计策略杂谈</a><time datetime="2020-11-04T15:02:02.000Z" title="发表于 2020-11-04 23:02:02">2020-11-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/10/30/20200915/" title="单调性专题（一）"><img src="/img/algo-01.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="单调性专题（一）"/></a><div class="content"><a class="title" href="/2020/10/30/20200915/" title="单调性专题（一）">单调性专题（一）</a><time datetime="2020-10-29T22:18:50.000Z" title="发表于 2020-10-30 06:18:50">2020-10-30</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div><ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/algorithm/"><span class="card-category-list-name">algorithm</span><span class="card-category-list-count">80</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/c/"><span class="card-category-list-name">c++</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/computer-networks/"><span class="card-category-list-name">computer networks</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/csapp/"><span class="card-category-list-name">csapp</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/data-structure/"><span class="card-category-list-name">data_structure</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/hexo/"><span class="card-category-list-name">hexo</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/linux/"><span class="card-category-list-name">linux</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/math/"><span class="card-category-list-name">math</span><span class="card-category-list-count">9</span></a></li>
+            <li class="card-category-list-item more is-center"><a class="card-category-list-link-more" href="/categories/">
+                <span>查看更多</span><i class="fas fa-angle-right"></i></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Graph/" style="font-size: 1.34em; color: #99a3b0">Graph</a> <a href="/tags/algorithm/" style="font-size: 1.5em; color: #99a9bf">algorithm</a> <a href="/tags/c/" style="font-size: 1.1em; color: #999">c++</a> <a href="/tags/c-c/" style="font-size: 1.1em; color: #999">c/c++</a> <a href="/tags/computer-networks/" style="font-size: 1.1em; color: #999">computer networks</a> <a href="/tags/csapp/" style="font-size: 1.14em; color: #999b9d">csapp</a> <a href="/tags/data-structure/" style="font-size: 1.3em; color: #99a1ac">data_structure</a> <a href="/tags/datastructure/" style="font-size: 1.14em; color: #999b9d">datastructure</a> <a href="/tags/dp/" style="font-size: 1.46em; color: #99a7bb">dp</a> <a href="/tags/dynamic-programming/" style="font-size: 1.42em; color: #99a6b7">dynamic programming</a> <a href="/tags/hexo/" style="font-size: 1.18em; color: #999ca1">hexo</a> <a href="/tags/linux/" style="font-size: 1.14em; color: #999b9d">linux</a> <a href="/tags/math/" style="font-size: 1.38em; color: #99a4b4">math</a> <a href="/tags/nginx/" style="font-size: 1.1em; color: #999">nginx</a> <a href="/tags/%E4%BA%8C%E5%88%86/" style="font-size: 1.14em; color: #999b9d">二分</a> <a href="/tags/%E4%BA%8C%E8%BF%9B%E5%88%B6/" style="font-size: 1.1em; color: #999">二进制</a> <a href="/tags/%E5%87%A0%E4%BD%95/" style="font-size: 1.1em; color: #999">几何</a> <a href="/tags/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97/" style="font-size: 1.22em; color: #999ea4">单调队列</a> <a href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/" style="font-size: 1.14em; color: #999b9d">双指针</a> <a href="/tags/%E5%A4%A7%E6%95%B4%E6%95%B0/" style="font-size: 1.14em; color: #999b9d">大整数</a> <a href="/tags/%E5%B7%AE%E5%88%86/" style="font-size: 1.26em; color: #999fa8">差分</a> <a href="/tags/%E5%BA%8F%E5%88%97/" style="font-size: 1.1em; color: #999">序列</a> <a href="/tags/%E5%BD%92%E5%B9%B6/" style="font-size: 1.1em; color: #999">归并</a> <a href="/tags/%E6%89%AB%E6%8F%8F%E7%BA%BF/" style="font-size: 1.14em; color: #999b9d">扫描线</a> <a href="/tags/%E6%90%9C%E7%B4%A2/" style="font-size: 1.3em; color: #99a1ac">搜索</a> <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" style="font-size: 1.1em; color: #999">操作系统</a> <a href="/tags/%E6%9D%82%E4%B9%B1%E7%9A%84%E6%8A%80%E6%9C%AF/" style="font-size: 1.22em; color: #999ea4">杂乱的技术</a> <a href="/tags/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" style="font-size: 1.14em; color: #999b9d">滑动窗口</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95/" style="font-size: 1.1em; color: #999">计算几何</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84/" style="font-size: 1.1em; color: #999">计算机系统结构</a> <a href="/tags/%E8%B4%AA%E5%BF%83/" style="font-size: 1.34em; color: #99a3b0">贪心</a> <a href="/tags/%E8%BF%90%E7%BB%B4/" style="font-size: 1.1em; color: #999">运维</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/01/"><span class="card-archive-list-date">一月 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/11/"><span class="card-archive-list-date">十一月 2020</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/10/"><span class="card-archive-list-date">十月 2020</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/09/"><span class="card-archive-list-date">九月 2020</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/08/"><span class="card-archive-list-date">八月 2020</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/07/"><span class="card-archive-list-date">七月 2020</span><span class="card-archive-list-count">6</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/06/"><span class="card-archive-list-date">六月 2020</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/05/"><span class="card-archive-list-date">五月 2020</span><span class="card-archive-list-count">7</span></a></li><li class="card-archive-list-item more is-center"><a class="card-archive-list-link-more" href="/archives/">
+              <span>查看更多</span><i class="fas fa-angle-right"  ></i></a></li></ul></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2017 - 2021 By fogsail</div><div class="footer_custom_text"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://beian.miit.gov.cn/"><span>闽ICP备18003953号-1</span></a></br><a target="_blank" rel="noopener external nofollow noreferrer" href="http://www.beian.gov.cn/portal/index.do"><img class="icp-icon" src="/img/gongan.png"><span>闽公网安备 35010202000760号</span></a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',()=> {preloader.endLoading()})</script><div class="js-pjax"><script>function subtitleType () {
+  if (true) { 
+    var typed = new Typed("#subtitle", {
+      strings: "ICPC等算法竞赛有关的算法学习,项目开发的总结和踩的那些坑,技术书籍的阅读".split(","),
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50
+    })
+  } else {
+    document.getElementById("subtitle").innerHTML = 'ICPC等算法竞赛有关的算法学习'
+  }
+}
+
+if (true) {
+  if (typeof Typed === 'function') {
+    subtitleType()
+  } else {
+    getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
+  }
+} else {
+  subtitleType()
+}</script></div><div class="app-refresh" id="app-refresh"> <div class="app-refresh-wrap"> <label>✨ 網站已更新最新版本 👉</label> <a href="javascript:void(0)" rel="external nofollow noreferrer" onclick="location.reload()">點擊刷新</a> </div></div><script>function showNotification(){if(GLOBAL_CONFIG.Snackbar){var t="light"===document.documentElement.getAttribute("data-theme")?GLOBAL_CONFIG.Snackbar.bgLight:GLOBAL_CONFIG.Snackbar.bgDark,e=GLOBAL_CONFIG.Snackbar.position;Snackbar.show({text:"已更新最新版本",backgroundColor:t,duration:5e5,pos:e,actionText:"點擊刷新",actionTextColor:"#fff",onActionClick:function(t){location.reload()}})}else{var o=`top: 0; background: ${"light"===document.documentElement.getAttribute("data-theme")?"#49b1f5":"#1f1f1f"};`;document.getElementById("app-refresh").style.cssText=o}}"serviceWorker"in navigator&&(navigator.serviceWorker.controller&&navigator.serviceWorker.addEventListener("controllerchange",function(){showNotification()}),window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js")}));</script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script>(function(){
+  const bp = document.createElement('script');
+  const curProtocol = window.location.protocol.split(':')[0];
+  if (curProtocol === 'https') {
+    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+  bp.dataset.pjax = ''
+  const s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(bp, s);
+})()</script></div></body></html>
