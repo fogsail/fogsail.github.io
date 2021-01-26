@@ -816,14 +816,14 @@
   </url>
   
   <url>
-    <loc>http://www.fogsail.net/tags/c-c/</loc>
+    <loc>http://www.fogsail.net/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
     <lastmod>2021-01-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://www.fogsail.net/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
+    <loc>http://www.fogsail.net/tags/c-c/</loc>
     <lastmod>2021-01-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -928,6 +928,13 @@
   </url>
   
   <url>
+    <loc>http://www.fogsail.net/tags/%E5%87%A0%E4%BD%95/</loc>
+    <lastmod>2021-01-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://www.fogsail.net/tags/%E5%8F%8C%E6%8C%87%E9%92%88/</loc>
     <lastmod>2021-01-26</lastmod>
     <changefreq>daily</changefreq>
@@ -971,13 +978,6 @@
   
   <url>
     <loc>http://www.fogsail.net/tags/nginx/</loc>
-    <lastmod>2021-01-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.fogsail.net/tags/%E5%87%A0%E4%BD%95/</loc>
     <lastmod>2021-01-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
