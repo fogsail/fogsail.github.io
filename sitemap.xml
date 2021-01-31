@@ -2,14 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.fogsail.net/2020/11/11/20201001/</loc>
+    <loc>https://www.fogsail.net/2020/10/01/20200901/</loc>
     
-    <lastmod>2021-01-30</lastmod>
+    <lastmod>2021-01-31</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fogsail.net/2021/01/31/20210131/</loc>
+    
+    <lastmod>2021-01-31</lastmod>
     
   </url>
   
   <url>
     <loc>https://www.fogsail.net/2020/11/04/20200920/</loc>
+    
+    <lastmod>2021-01-31</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fogsail.net/2020/11/11/20201001/</loc>
     
     <lastmod>2021-01-30</lastmod>
     
@@ -38,13 +52,6 @@
   
   <url>
     <loc>https://www.fogsail.net/2020/10/07/20200902/</loc>
-    
-    <lastmod>2021-01-30</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fogsail.net/2020/10/01/20200901/</loc>
     
     <lastmod>2021-01-30</lastmod>
     
@@ -1083,6 +1090,27 @@
   
   <url>
     <loc>https://www.fogsail.net/tags/splay/</loc>
+    <lastmod>2021-01-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.fogsail.net/tags/%E6%8E%92%E5%BA%8F/</loc>
+    <lastmod>2021-01-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.fogsail.net/tags/%E5%80%8D%E5%A2%9E/</loc>
+    <lastmod>2021-01-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.fogsail.net/tags/%E9%80%86%E5%BA%8F%E5%AF%B9/</loc>
     <lastmod>2021-01-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
