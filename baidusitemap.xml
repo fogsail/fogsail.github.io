@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.fogsail.net/2021/02/22/20210222/</loc>
-    <lastmod>2021-04-16T06:32:30.462Z</lastmod>
+    <loc>https://www.fogsail.net/2021/04/23/20210422/</loc>
+    <lastmod>2021-04-28T03:49:47.386Z</lastmod>
+  </url>  <url>
+    <loc>https://www.fogsail.net/2021/04/23/20210423/</loc>
+    <lastmod>2021-04-23T06:34:00.654Z</lastmod>
   </url>  <url>
     <loc>https://www.fogsail.net/2021/04/09/20210409/</loc>
-    <lastmod>2021-04-12T23:14:26.182Z</lastmod>
+    <lastmod>2021-04-23T05:25:36.180Z</lastmod>
+  </url>  <url>
+    <loc>https://www.fogsail.net/2020/11/11/20201001/</loc>
+    <lastmod>2021-04-20T07:23:50.498Z</lastmod>
   </url>  <url>
     <loc>https://www.fogsail.net/2021/04/06/20210406/</loc>
-    <lastmod>2021-04-12T12:25:32.193Z</lastmod>
+    <lastmod>2021-04-18T21:58:39.401Z</lastmod>
+  </url>  <url>
+    <loc>https://www.fogsail.net/2021/02/22/20210222/</loc>
+    <lastmod>2021-04-16T06:32:30.462Z</lastmod>
   </url>  <url>
     <loc>https://www.fogsail.net/2021/04/09/20210408/</loc>
     <lastmod>2021-04-09T14:15:14.658Z</lastmod>
@@ -60,9 +69,6 @@
   </url>  <url>
     <loc>https://www.fogsail.net/2021/02/16/20210216/</loc>
     <lastmod>2021-02-19T08:51:31.220Z</lastmod>
-  </url>  <url>
-    <loc>https://www.fogsail.net/2020/11/11/20201001/</loc>
-    <lastmod>2021-02-15T14:34:13.943Z</lastmod>
   </url>  <url>
     <loc>https://www.fogsail.net/2021/02/06/20210206/</loc>
     <lastmod>2021-02-14T12:06:08.258Z</lastmod>
@@ -304,9 +310,6 @@
     <loc>https://www.fogsail.net/2018/08/27/20180828/</loc>
     <lastmod>2021-01-28T03:28:48.451Z</lastmod>
   </url>  <url>
-    <loc>https://www.fogsail.net/2018/08/27/20180827/</loc>
-    <lastmod>2021-01-28T03:00:22.862Z</lastmod>
-  </url>  <url>
     <loc>https://www.fogsail.net/2018/08/24/20180824/</loc>
     <lastmod>2021-01-28T02:55:48.632Z</lastmod>
   </url>  <url>
@@ -327,51 +330,6 @@
   </url>  <url>
     <loc>https://www.fogsail.net/2017/06/26/20170626/</loc>
     <lastmod>2021-01-28T02:12:44.117Z</lastmod>
-  </url>  <url>
-    <loc>https://www.fogsail.net/2017/05/29/20170529/</loc>
-    <lastmod>2021-01-28T02:11:12.123Z</lastmod>
-  </url>  <url>
-    <loc>https://www.fogsail.net/2017/05/23/20170523/</loc>
-    <lastmod>2021-01-28T02:09:42.537Z</lastmod>
-  </url>  <url>
-    <loc>https://www.fogsail.net/2017/05/13/20170513/</loc>
-    <lastmod>2021-01-28T02:07:38.414Z</lastmod>
-  </url>  <url>
-    <loc>https://www.fogsail.net/2017/05/12/20170512/</loc>
-    <lastmod>2021-01-28T01:59:11.243Z</lastmod>
-  </url>  <url>
-    <loc>https://www.fogsail.net/2017/05/08/20170508/</loc>
-    <lastmod>2021-01-28T01:57:37.912Z</lastmod>
-  </url>  <url>
-    <loc>https://www.fogsail.net/2017/04/19/20170419/</loc>
-    <lastmod>2021-01-28T01:52:25.659Z</lastmod>
-  </url>  <url>
-    <loc>https://www.fogsail.net/2017/04/16/20170416/</loc>
-    <lastmod>2021-01-28T01:48:57.442Z</lastmod>
-  </url>  <url>
-    <loc>https://www.fogsail.net/2017/04/05/20170405/</loc>
-    <lastmod>2021-01-28T01:43:49.233Z</lastmod>
-  </url>  <url>
-    <loc>https://www.fogsail.net/2017/03/12/20170312/</loc>
-    <lastmod>2021-01-28T01:42:12.616Z</lastmod>
-  </url>  <url>
-    <loc>https://www.fogsail.net/2017/03/06/20170307/</loc>
-    <lastmod>2021-01-28T01:36:04.161Z</lastmod>
-  </url>  <url>
-    <loc>https://www.fogsail.net/2017/02/18/20170218/</loc>
-    <lastmod>2021-01-28T01:32:29.872Z</lastmod>
-  </url>  <url>
-    <loc>https://www.fogsail.net/2017/02/02/20170202/</loc>
-    <lastmod>2021-01-28T01:32:19.320Z</lastmod>
-  </url>  <url>
-    <loc>https://www.fogsail.net/2017/03/05/20170305/</loc>
-    <lastmod>2021-01-28T01:32:01.968Z</lastmod>
-  </url>  <url>
-    <loc>https://www.fogsail.net/2017/01/30/20170130/</loc>
-    <lastmod>2021-01-28T00:41:30.711Z</lastmod>
-  </url>  <url>
-    <loc>https://www.fogsail.net/2017/01/29/20170129/</loc>
-    <lastmod>2021-01-28T00:38:15.622Z</lastmod>
   </url>  <url>
     <loc>https://www.fogsail.net/2021/01/27/20210122/</loc>
     <lastmod>2021-01-26T17:59:10.943Z</lastmod>
