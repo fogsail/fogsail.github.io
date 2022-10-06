@@ -1,0 +1,41 @@
+<h1>Copy-tex extension</h1>
+<p>This extension modifies the copy/paste behavior in any browser supporting the<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/ClipboardEvent">Clipboard API</a><br>
+so that, when selecting and copying whole KaTeX-rendered elements, the text<br>
+content of the resulting clipboard renders KaTeX elements as their LaTeX source<br>
+surrounded by specified delimiters.  (The HTML content of the resulting<br>
+clipboard remains the selected HTML content, as it normally would.)<br>
+The default delimiters are <code>$...$</code> for inline math and <code>$$...$$</code> for display<br>
+math, but you can easy switch them to e.g. <code>\(...\)</code> and <code>\[...\]</code> by<br>
+modifying <code>copyDelimiters</code> in <a href="copy-tex.js">the source code</a>.</p>
+<h3 id="Usage">Usage</h3>
+<p>This extension isn’t part of KaTeX proper, so the script should be separately<br>
+included in the page.  It also provides <em>optional</em> custom CSS that<br>
+defines KaTeX equations as<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/user-select"><code>user-select: all</code></a><br>
+so that they get selected all-or-nothing (and thus trigger the good behavior<br>
+provided by this extension).  Without this CSS, partially selected equations<br>
+will just get the usual HTML copy/paste behavior.</p>
+<pre><code class="language-html">&lt;link href=&quot;https://cdn.jsdelivr.net/npm/katex@0.13.2/dist/contrib/copy-tex.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/katex@0.13.2/dist/contrib/copy-tex.min.js&quot; integrity=&quot;sha384-Ep9Es0VCjVn9dFeaN2uQxgGcGmG+pfZ4eBaHxUpxXDORrrVACZVOpywyzvFRGbmv&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>See <a href="index.html">index.html</a> for an example.<br>
+(To run this example from a clone of the repository, run <code>yarn start</code><br>
+in the root KaTeX directory, and then visit<br>
+<a href="http://localhost:7936/contrib/copy-tex/index.html">http://localhost:7936/contrib/copy-tex/index.html</a><br>
+with your web browser.)</p>
+<p>If you want to build your own custom copy handler based on this one,<br>
+copy the <code>copy-tex.js</code> into your codebase and replace the <code>require</code><br>
+statement with <code>require('katex/contrib/copy-tex/katex2tex.js')</code>.</p>
+<p>ECMAScript module is also available:</p>
+<pre><code class="language-html">&lt;script type=&quot;module&quot; src=&quot;https://cdn.jsdelivr.net/npm/katex@0.13.2/dist/contrib/copy-tex.mjs&quot; integrity=&quot;sha384-+gSYJ3yzY30+a6FGYJXOx9swmWs5oPKEi1AeCsAxsLexABlUXgHXkOkEZCj0Lz8U&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+</code></pre>
+<h3 id="Known-Issues">Known Issues</h3>
+<p>This extension has been tested on Chrome, Firefox, Edge, and Safari.</p>
+<p>Microsoft Edge<br>
+<a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/clipboardapi/">does not seem to support</a><br>
+text and HTML content in a single clipboard.  In this browser, this extension<br>
+will just put the text content into the clipboard.</p>
+<p>Safari copies correctly, but the selection rectangle renders strangely<br>
+(too big) when interacting with display math<br>
+(because of the <code>user-select: all</code> CSS).</p>
